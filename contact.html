@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Teixeira Santos - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <div class="profile-img">
+            <img src="images/avatar.png" alt="Pedro Teixeira Santos">
+        </div>
+        <h2>Pedro Teixeira Santos</h2>
+        <span class="badge">IT Technician</span>
+        
+        <div class="separator-line"></div>
+
+        <div class="contact-info">
+            <div class="info-item">
+                <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                <div class="info-text">
+                    <small>EMAIL</small>
+                    <p>pedrosatos2006@gmail.com</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="info-text">
+                    <small>LOCATION</small>
+                    <p>Chaves, Portugal</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/Lk09"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/pedro-santos-b41504161"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </aside>
+
+    <main class="content">
+        <nav class="navbar">
+            <a href="index.html" >About</a>
+            <a href="resume.html" >Resume</a>
+            <a href="portfolio.html" >Portfolio</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+
+        <section class="contact-section" style="margin-top: 4rem;">
+            <h1>Contact</h1>
+            <div class="title-separator"></div>
+
+            <div class="contact-form-container">
+                <h3>Send me a message</h3>
+                
+                <form action="https://formsubmit.co/pedrosatos2006@gmail.com" method="POST" class="contact-form">
+                    
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <input type="hidden" name="_next" value="#">
+
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fa-solid fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <p>&copy; 2026 Pedro Teixeira Santos. Coded from scratch with <i class="fa-solid fa-code"></i></p>
+        </footer>
+    </main>
+</div>
+
+</body>
+</html>
