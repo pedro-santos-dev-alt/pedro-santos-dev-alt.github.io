@@ -1,110 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-PT">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Teixeira Santos - Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="images/avatar.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d1b">
+  <meta name="description" content="Portefólio de Pedro Teixeira Santos: desenvolvimento de software, sistemas e suporte técnico em Chaves, Portugal.">
+  <meta property="og:title" content="Pedro Teixeira Santos — Programador e Técnico de Informática">
+  <meta property="og:description" content="Conhece os projetos, competências e percurso de Pedro Teixeira Santos.">
+  <meta property="og:type" content="website">
+  <title>Pedro Teixeira Santos — Portefólio</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="64x64">
+  <link rel="preload" as="image" href="images/avatar.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
+<body id="top">
+  <header class="site-header wrap">
+    <a class="wordmark" href="index.html" aria-label="Pedro Santos, início"><span class="wordmark-mark">P<span>.</span></span><span>Pedro Santos</span></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a class="active" aria-current="page" href="index.html">Início</a><a href="resume.html">Percurso</a><a href="portfolio.html">Projetos</a><a href="contact.html">Contacto</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Ativar tema claro" title="Mudar tema"><i class="fa-solid fa-sun" aria-hidden="true"></i></button>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> A estudar e a construir em Chaves, Portugal</p>
+        <h1>Olá, sou o Pedro.<br><span>Crio soluções digitais</span> e resolvo problemas técnicos.</h1>
+        <p class="hero-lede">Estudante de Informática no IPB, com experiência em desenvolvimento de software, sistemas e suporte técnico. Gosto de perceber como as coisas funcionam — e de as fazer funcionar melhor.</p>
+        <div class="hero-actions"><a class="button button-primary" href="portfolio.html">Explorar projetos <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="button button-quiet" href="output/pdf/Pedro_Santos_cv.pdf" download="Pedro_Santos_cv.pdf">Descarregar CV <i class="fa-solid fa-download" aria-hidden="true"></i></a></div>
+        <div class="hero-social"><a href="https://github.com/pedro-santos-dev-alt" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub <i class="fa-solid fa-arrow-up-right-from-square external" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/pedro-santos-b41504161" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn <i class="fa-solid fa-arrow-up-right-from-square external" aria-hidden="true"></i></a></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="portrait-frame"><img src="images/avatar.webp" alt="Retrato de Pedro Teixeira Santos" width="520" height="520" fetchpriority="high"></div>
+        <div class="floating-note"><span class="note-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span><span><strong>Informática</strong><small>Software · Sistemas · Suporte</small></span></div>
+        <span class="hero-orbit orbit-one" aria-hidden="true"></span><span class="hero-orbit orbit-two" aria-hidden="true"></span>
+      </div>
+    </section>
 
-<div class="container">
-    <aside class="sidebar">
-        <div class="profile-img">
-            <img src="images/avatar.png" alt="Pedro Teixeira Santos">
-        </div>
-        <h2>Pedro Teixeira Santos</h2>
-        <span class="badge">IT Technician</span>
-        
-        <div class="separator-line"></div>
+    <section class="section-block intro-grid reveal" aria-labelledby="about-title">
+      <div><p class="eyebrow">Um pouco sobre mim</p><h2 id="about-title">Curioso por natureza.<br><span>Prático por formação.</span></h2></div>
+      <div class="intro-copy"><p>Estou a frequentar o CTeSP em Informática no Instituto Politécnico de Bragança. A minha formação combina programação, desenvolvimento web e móvel, redes, sistemas operativos e manutenção de hardware.</p><p>Trabalho com C, C#, JavaScript e tecnologias web. Também uso Windows e Linux no dia a dia e integro ferramentas de IA no meu fluxo de trabalho para pesquisar, aprender e iterar com mais eficiência.</p><a class="text-link" href="resume.html">Ver o meu percurso <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+    </section>
 
-        <div class="contact-info">
-            <div class="info-item">
-                <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
-                <div class="info-text">
-                    <small>EMAIL</small>
-                    <p>pedrosatos2006@gmail.com</p>
-                </div>
-            </div>
-            <div class="info-item">
-                <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
-                <div class="info-text">
-                    <small>LOCATION</small>
-                    <p>Chaves, Portugal</p>
-                </div>
-            </div>
-        </div>
+    <section class="section-block" aria-labelledby="focus-title"><div class="section-heading reveal"><div><p class="eyebrow">Áreas de interesse</p><h2 id="focus-title">O que posso fazer</h2></div></div>
+      <div class="focus-grid">
+        <article class="focus-card reveal"><span class="card-index">01</span><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><h3>Desenvolvimento</h3><p>Aplicações e experiências web com HTML, CSS, JavaScript, C# e C.</p></article>
+        <article class="focus-card reveal"><span class="card-index">02</span><i class="fa-solid fa-network-wired" aria-hidden="true"></i><h3>Sistemas e redes</h3><p>Configuração de Windows e Linux, redes locais e infraestrutura informática.</p></article>
+        <article class="focus-card reveal"><span class="card-index">03</span><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i><h3>Suporte técnico</h3><p>Diagnóstico, manutenção e resolução de problemas de hardware e software.</p></article>
+      </div>
+    </section>
 
-        <div class="social-links">
-            <a href="https://github.com/pedro-santos-dev-alt"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/pedro-santos-b41504161"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-    </aside>
-
-    <main class="content">
-        <nav class="navbar">
-            <a href="index.html" class="active">About</a>
-            <a href="resume.html" >Resume</a>
-            <a href="portfolio.html" >Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
-        <section class="about-section">
-            <h1>About Me</h1>
-            <div class="title-separator"></div>
-            
-            <p>I am a 20-year-old IT technician, currently attending the Higher Professional Technical Course (CTeSP) in Informatics at the Polytechnic Institute of Bragança (IPB). My experience is based on software development, network and systems management, technical support, and IT infrastructure maintenance.</p>
-            
-            <p>I have a solid foundation in algorithms and programming logic, and an aptitude for adapting to Windows/Linux operating systems. I actively integrate AI into my daily workflow to maximize efficiency and deliver faster results.</p>
-            
-            <p>Languages: Portuguese (Native), English (B2).</p>
-        </section>
-
-        <section class="services-section">
-            <h2>What I Do</h2>
-            <div class="services-grid">
-                
-                <div class="service-card">
-                    <i class="fa-solid fa-code"></i>
-                    <div>
-                        <h3>Software Development</h3>
-                        <p>Frontend Web Development with HTML5, CSS3, JavaScript (ES6+), and programming in C, C#. Mobile experience with Android Studio (Java/Kotlin).</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <i class="fa-brands fa-linux"></i>
-                    <div>
-                        <h3>Systems and Networks (LAN)</h3>
-                        <p>Installation, configuration, and optimization of operating systems (Windows/Linux) and enterprise software. Assembly and management of local network infrastructures.</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                    <div>
-                        <h3>Hardware and Maintenance</h3>
-                        <p>Computer assembly, hardware troubleshooting, and component replacement. Preventive and corrective maintenance of peripherals.</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <i class="fa-solid fa-headset"></i>
-                    <div>
-                        <h3>Technical Support</h3>
-                        <p>Diagnosis and resolution of complex hardware and software issues. Direct assistance and technical support to clients.</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <footer class="site-footer">
-            <p>&copy; 2026 Pedro Teixeira Santos. Coded from scratch with <i class="fa-solid fa-code"></i></p>
-        </footer>
-    </main>
-</div>
-
+    <section class="section-block featured-section reveal" aria-labelledby="featured-title"><div class="section-heading"><div><p class="eyebrow">Trabalho recente</p><h2 id="featured-title">Projetos em destaque</h2></div><a class="text-link" href="portfolio.html">Todos os projetos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+      <a class="featured-card" href="portfolio.html"><img src="images/gta5-enhanced-story-trainer.svg" alt="Menu conceptual do GTA V Enhanced Story Trainer com a tecla F7 e opções de jogador, armas, veículos e mundo" width="1200" height="675" loading="lazy"><div><span class="project-kicker">Plugin .asi · C++ · ScriptHookV</span><h3>GTA V Enhanced Story Trainer</h3><p>Trainer para o modo História offline, com menu F7 e opções para jogador, armas, veículos e mundo.</p><span class="text-link">Ver projeto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div><span class="featured-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+    </section>
+    <section class="contact-strip reveal"><div><p class="eyebrow">Vamos conversar?</p><h2>Tens um projeto ou uma oportunidade?</h2></div><a class="button button-primary" href="contact.html">Entrar em contacto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></section>
+  </main>
+  <footer class="site-footer wrap"><a class="wordmark" href="index.html"><span class="wordmark-mark">P<span>.</span></span><span>Pedro Santos</span></a><p>Feito com curiosidade e código. <span>© <span data-year></span> Pedro Teixeira Santos</span></p><a class="back-top" href="#top" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a></footer>
 </body>
 </html>
